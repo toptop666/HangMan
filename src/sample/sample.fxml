@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Canvas fx:id="canv" height="500.0" width="300.0" />
+            <VBox alignment="CENTER" prefHeight="500.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your guess:">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+                  <TextField fx:id="input" promptText="guess">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Button mnemonicParsing="false" onAction="#update" text="send">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="the word:">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
+                  <Text fx:id="guess" strokeType="OUTSIDE" strokeWidth="0.0" text="text">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
+                  <Text fx:id="systemOutput" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                  <Button mnemonicParsing="false" onAction="#replay" text="replay">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+               </children></VBox>
+         </children></HBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
